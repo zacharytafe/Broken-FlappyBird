@@ -7,22 +7,22 @@ namespace FlappyBird
     [RequireComponent(typeof(Bird))]
     public class UserInput : MonoBehaviour
     {
-        private Birdbird;
+        private float Bird;
 
         // Use this for initialization
         void Start()
         {
-            bird = GetCompo  nent<Bird>();
+            Bird = GetComponent<Bird>();
         }
 
         // Update is called once per frame
         void Update()
         {
             // Check for mouse down
-            if (Input.GetM  ouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0))
             {
                 // Flap the bird
-                bird.Flap();
+                Bird.Flap();
             }
         }
     }
